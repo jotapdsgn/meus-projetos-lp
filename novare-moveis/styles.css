@@ -66,13 +66,6 @@ body {
   font-weight: 350;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  padding-bottom: 72px;
-}
-
-@media (min-width: 901px) {
-  body {
-    padding-bottom: 0;
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -906,66 +899,19 @@ ul {
 
 .whatsapp-float-btn {
   position: fixed;
-  bottom: 80px;
-  right: 18px;
-  width: 56px;
-  height: 56px;
+  bottom: 24px;
+  right: 20px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background: #25d366;
   color: #ffffff !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
-  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.4);
+  font-size: 1.65rem;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
   z-index: 999;
-}
-
-@media (min-width: 901px) {
-  .whatsapp-float-btn {
-    bottom: 26px;
-    right: 26px;
-  }
-}
-
-.mobile-sticky-bar {
-  display: block;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 10px 16px;
-  padding-bottom: max(10px, env(safe-area-inset-bottom));
-  box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.08);
-  z-index: 998;
-  border-top: 1.5px solid var(--border-light);
-}
-
-@media (min-width: 901px) {
-  .mobile-sticky-bar {
-    display: none;
-  }
-}
-
-.mobile-sticky-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-  height: 48px;
-  background: var(--gold-gradient);
-  color: #ffffff !important;
-  border-radius: var(--radius-full);
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 0.94rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  box-shadow: 0 4px 14px rgba(184, 141, 68, 0.3);
 }
 
 /* ==========================================================================
@@ -1042,7 +988,31 @@ ul {
 
 @media (max-width: 640px) {
   .container {
-    padding: 0 18px;
+    padding: 0 16px;
+  }
+
+  .btn {
+    padding: 11px 20px;
+    font-size: 0.8rem;
+    min-height: 40px;
+    gap: 8px;
+    letter-spacing: 0.02em;
+  }
+
+  .btn-lg {
+    padding: 12px 22px;
+    font-size: 0.82rem;
+    min-height: 42px;
+  }
+
+  .hero-cta-group {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    max-width: 290px;
   }
 
   .collections-grid {
@@ -1061,10 +1031,6 @@ ul {
 
   .proof-divider {
     display: none;
-  }
-
-  .hero-cta-group .btn {
-    width: 100%;
   }
 
   .contact-box-clean {
