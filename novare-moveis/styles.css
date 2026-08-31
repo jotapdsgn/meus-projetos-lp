@@ -34,6 +34,7 @@
   /* Tipografia */
   --font-heading: 'Outfit', -apple-system, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-script: 'Cormorant Garamond', serif;
 
   /* Raio & Transições */
   --radius-sm: 6px;
@@ -62,6 +63,7 @@ body {
   background-color: var(--bg-main);
   color: var(--text-body);
   line-height: 1.7;
+  font-weight: 350;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   padding-bottom: 72px;
@@ -76,9 +78,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-dark);
   font-family: var(--font-heading);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
 }
 
 a {
@@ -393,24 +395,33 @@ ul {
 
 .hero-title-main {
   font-family: var(--font-heading);
-  font-size: clamp(2.3rem, 4.5vw, 3.5rem);
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  line-height: 1.15;
-  margin-bottom: 18px;
+  font-size: clamp(2.1rem, 4.2vw, 3.3rem);
+  font-weight: 350;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  margin-bottom: 20px;
   color: var(--text-dark);
 }
 
-.hero-title-main strong {
-  font-weight: 800;
-  color: var(--text-dark);
+.script-highlight {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.22em;
+  color: var(--primary-gold-dark);
+  background: linear-gradient(135deg, #c5a059 0%, #8c6428 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding: 0 4px;
 }
 
 .hero-subtitle-lead {
-  font-size: 1.08rem;
+  font-size: 1.05rem;
   color: var(--text-body);
   margin-bottom: 32px;
-  line-height: 1.7;
+  line-height: 1.75;
+  font-weight: 350;
 }
 
 .hero-cta-group {
