@@ -7,17 +7,17 @@
   <meta name="description" content="Projetos de Landing Pages de alta conversão para profissionais e empresas.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     :root {
       --primary: #c5a059;
-      --primary-dark: #8d6135;
-      --bg: #0f172a;
-      --bg-card: #1e293b;
+      --primary-red: #e11d48;
+      --bg: #0b0e14;
+      --bg-card: #151a24;
       --text: #f8fafc;
       --text-muted: #94a3b8;
-      --radius: 16px;
+      --radius: 18px;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -28,7 +28,7 @@
       padding: 40px 20px 80px;
     }
     .container {
-      max-width: 1100px;
+      max-width: 1140px;
       margin: 0 auto;
     }
     header {
@@ -38,31 +38,32 @@
     .badge {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 6px 14px;
+      gap: 8px;
+      padding: 6px 16px;
       border-radius: 9999px;
-      background: rgba(197, 160, 89, 0.15);
-      border: 1px solid rgba(197, 160, 89, 0.3);
-      color: var(--primary);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #e2e8f0;
       font-size: 0.85rem;
       font-weight: 600;
       margin-bottom: 16px;
     }
     h1 {
       font-family: 'Outfit', sans-serif;
-      font-size: clamp(2rem, 5vw, 3rem);
+      font-size: clamp(2.1rem, 5vw, 3.2rem);
       font-weight: 800;
       margin-bottom: 12px;
+      letter-spacing: -0.02em;
     }
     h1 span {
-      background: linear-gradient(135deg, #c5a059 0%, #dfbe7d 100%);
+      background: linear-gradient(135deg, #c5a059 0%, #f43f5e 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     p.lead {
       color: var(--text-muted);
-      font-size: 1.1rem;
-      max-width: 600px;
+      font-size: 1.05rem;
+      max-width: 620px;
       margin: 0 auto;
     }
     .projects-grid {
@@ -83,12 +84,12 @@
     }
     .project-card:hover {
       transform: translateY(-6px);
-      border-color: rgba(197, 160, 89, 0.5);
-      box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.5);
+      border-color: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
     }
     .card-thumb {
-      height: 200px;
-      background: #111827;
+      height: 220px;
+      background: #0f1219;
       position: relative;
       overflow: hidden;
       display: flex;
@@ -106,15 +107,25 @@
     }
     .card-tag {
       position: absolute;
-      top: 12px;
-      left: 12px;
-      background: linear-gradient(135deg, #c5a059 0%, #a07839 100%);
+      top: 14px;
+      left: 14px;
+      background: rgba(0, 0, 0, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       color: #ffffff;
       font-size: 0.72rem;
       font-weight: 700;
       padding: 4px 10px;
       border-radius: 9999px;
       text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .tag-gold {
+      border-color: rgba(197, 160, 89, 0.5);
+      color: #dfbe7d;
+    }
+    .tag-red {
+      border-color: rgba(225, 29, 72, 0.5);
+      color: #fb7185;
     }
     .card-body {
       padding: 24px;
@@ -124,7 +135,7 @@
     }
     .card-title {
       font-family: 'Outfit', sans-serif;
-      font-size: 1.3rem;
+      font-size: 1.35rem;
       font-weight: 700;
       margin-bottom: 8px;
     }
@@ -132,7 +143,7 @@
       color: var(--text-muted);
       font-size: 0.9rem;
       margin-bottom: 20px;
-      line-height: 1.5;
+      line-height: 1.55;
     }
     .card-footer {
       margin-top: auto;
@@ -146,21 +157,26 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      color: var(--primary);
       font-weight: 700;
       font-size: 0.9rem;
     }
+    .btn-view-gold {
+      color: var(--primary);
+    }
+    .btn-view-red {
+      color: var(--primary-red);
+    }
     .badge-status {
       font-size: 0.75rem;
-      font-weight: 600;
+      font-weight: 700;
       padding: 3px 8px;
       border-radius: 6px;
       background: rgba(16, 185, 129, 0.15);
       color: #34d399;
     }
     .card-placeholder {
-      border: 2px dashed rgba(255, 255, 255, 0.15);
-      background: rgba(255, 255, 255, 0.02);
+      border: 2px dashed rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.015);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -171,7 +187,7 @@
     }
     .card-placeholder i {
       font-size: 2.2rem;
-      color: rgba(197, 160, 89, 0.5);
+      color: rgba(255, 255, 255, 0.2);
       margin-bottom: 12px;
     }
     .card-placeholder h3 {
@@ -192,21 +208,37 @@
         <i class="fa-solid fa-layer-group"></i> Portfólio de Landing Pages
       </div>
       <h1>Demonstrações & <span>Projetos</span></h1>
-      <p class="lead">Landing pages profissionais de alta conversão criadas sob medida para diferentes nichos e negócios.</p>
+      <p class="lead">Landing pages profissionais de alta conversão sob medida para diferentes nichos e clientes.</p>
     </header>
 
     <div class="projects-grid">
       <!-- Card Projeto 1: Dra. Camila Dentista -->
       <a href="camila-dentista/" class="project-card">
         <div class="card-thumb">
-          <span class="card-tag">Odontologia</span>
+          <span class="card-tag tag-gold">Odontologia</span>
           <img src="camila-dentista/assets/images/dra-camila-perfil.webp" alt="Dra. Camila - Estúdio Oral">
         </div>
         <div class="card-body">
           <h2 class="card-title">Dra. Camila | Estúdio Oral</h2>
-          <p class="card-desc">Landing Page premium de odontologia especializada (Invisalign, DTM/Dor Orofacial, Clareamento e Clínica Geral em Itaúna - MG).</p>
+          <p class="card-desc">Odontologia Especializada (Invisalign Doctor, DTM & Dor Orofacial, Endodontia e Clínica Geral em Itaúna - MG).</p>
           <div class="card-footer">
-            <span class="btn-view">Visualizar Projeto <i class="fa-solid fa-arrow-right"></i></span>
+            <span class="btn-view btn-view-gold">Visualizar Projeto <i class="fa-solid fa-arrow-right"></i></span>
+            <span class="badge-status">Online</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card Projeto 2: RC Estética Automotiva -->
+      <a href="rc-esteticaautomotiva/" class="project-card">
+        <div class="card-thumb">
+          <span class="card-tag tag-red">Estética Automotiva</span>
+          <img src="rc-esteticaautomotiva/assets/images/banner-agenda-aberta.png" alt="RC Estética Automotiva">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">RC Estética Automotiva</h2>
+          <p class="card-desc">Polimento Técnico, Higienização Interna, Vitrificação de Pintura e Serviço Leva & Traz no bairro Três Marias em Itaúna - MG.</p>
+          <div class="card-footer">
+            <span class="btn-view btn-view-red">Visualizar Projeto <i class="fa-solid fa-arrow-right"></i></span>
             <span class="badge-status">Online</span>
           </div>
         </div>
@@ -216,7 +248,7 @@
       <div class="card-placeholder">
         <i class="fa-solid fa-plus-circle"></i>
         <h3>Próximo Cliente</h3>
-        <p>Espaço reservado para a sua próxima Landing Page.</p>
+        <p>Espaço reservado para o seu próximo projeto.</p>
       </div>
     </div>
   </div>
