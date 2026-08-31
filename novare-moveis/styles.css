@@ -349,71 +349,77 @@ ul {
 }
 
 /* ==========================================================================
-   HERO FULL-BLEED IMERSIVO LIGHT
+   HERO FULL-BLEED IMERSIVO COM DEGRADÊ SUAVE (FUSÃO COM O BRANCO)
    ========================================================================== */
 
 .hero-fullscreen {
   position: relative;
-  min-height: 92vh;
+  min-height: 94vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: url('assets/images/cozinha-planejada.jpg') center center / cover no-repeat;
-  padding: 130px 0 80px;
+  padding: 140px 0 90px;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, 
-              rgba(17, 19, 23, 0.6) 0%, 
-              rgba(17, 19, 23, 0.4) 50%, 
-              rgba(17, 19, 23, 0.8) 100%);
+              rgba(255, 255, 255, 0.65) 0%, 
+              rgba(255, 255, 255, 0.35) 40%, 
+              rgba(255, 255, 255, 0.85) 80%, 
+              #ffffff 100%);
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
-  color: #ffffff;
+  color: var(--text-dark);
 }
 
 .hero-badge-clean {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 18px;
+  padding: 6px 22px;
   border-radius: var(--radius-full);
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  font-size: 0.82rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(184, 141, 68, 0.35);
+  font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #fce7b2;
-  margin-bottom: 22px;
+  color: var(--primary-gold-dark);
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
 .hero-title-main {
-  font-size: clamp(2.3rem, 6vw, 4rem);
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.12;
-  margin-bottom: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 300;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.hero-title-main strong {
+  font-weight: 600;
 }
 
 .hero-subtitle-lead {
-  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
-  color: #f1f5f9;
-  max-width: 620px;
-  margin: 0 auto 34px;
-  line-height: 1.6;
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  color: #475569;
+  max-width: 640px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+  font-weight: 400;
 }
 
 .hero-cta-group {
@@ -422,38 +428,40 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .hero-proof-bar {
   display: inline-flex;
   align-items: center;
   gap: 24px;
-  padding: 10px 24px;
+  padding: 10px 28px;
   border-radius: var(--radius-full);
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  color: #ffffff;
+  border: 1px solid rgba(184, 141, 68, 0.25);
+  color: var(--text-dark);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
 }
 
 .proof-item {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.86rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #334155;
 }
 
 .proof-item i {
-  color: #fbbf24;
+  color: var(--primary-gold);
 }
 
 .proof-divider {
   width: 1px;
   height: 14px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(184, 141, 68, 0.25);
 }
 
 /* ==========================================================================
